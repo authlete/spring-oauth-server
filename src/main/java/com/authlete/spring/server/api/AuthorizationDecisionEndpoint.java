@@ -17,6 +17,7 @@
 package com.authlete.spring.server.api;
 
 
+import static com.authlete.jaxrs.util.JaxRsUtils.createMultivaluedMap;
 import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -67,10 +68,18 @@ public class AuthorizationDecisionEndpoint extends BaseAuthorizationDecisionEndp
      */
     @POST
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public Response post(
-            @Context HttpServletRequest request,
-            MultivaluedMap<String, String> parameters)
+    public Response post(@Context HttpServletRequest request)
     {
+        // Directly mapping the request body to a MultivaluedMap
+        // instance fails for some reasons under Spring Framework.
+        // Therefore, HttpServletRequest.getParameterMap() is used
+        // in handle(HttpServletRequest) method. A problem of
+        // getParameterMap() is that a Map instance returned from
+        // the method contains both form parameters and query
+        // parameters.
+        MultivaluedMap<String, String> parameters
+                = createMultivaluedMap(request.getParameterMap());
+
         // Get the existing session.
         HttpSession session = getSession(request);
 
@@ -80,7 +89,7 @@ public class AuthorizationDecisionEndpoint extends BaseAuthorizationDecisionEndp
         String[] claimNames   = (String[])takeAttribute(session, "claimNames");
         String[] claimLocales = (String[])takeAttribute(session, "claimLocales");
         User user             = getUser(session, parameters);
-        Date authTime         = (Date) session.getAttribute("authTime");
+        Date authTime         = (Date)session.getAttribute("authTime");
 
         // Handle the end-user's decision.
         return handle(AuthleteApiFactory.getDefaultApi(),
