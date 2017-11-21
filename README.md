@@ -1,5 +1,5 @@
-Authorization Server and OpenID Provider using Spring and Authlete
-==================================================================
+Authorization Server and OpenID Provider on Spring Framework
+============================================================
 
 Overview
 --------
