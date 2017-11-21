@@ -1,0 +1,4 @@
+.settings/
+target/
+.DS_Store
+local.authlete.properties
