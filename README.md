@@ -97,6 +97,12 @@ How To Run
 
         $ mvn spring-boot:run
 
+#### Run With Docker
+
+If you would prefer to use Docker, just hit the following command after the step 2.
+
+    $ docker-compose up
+
 #### Configuration File
 
 `spring-oauth-server` refers to `authlete.properties` as a configuration file.
