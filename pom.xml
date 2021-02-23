@@ -11,8 +11,8 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <authlete.java.common.version>2.11</authlete.java.common.version>
-        <authlete.java.jaxrs.version>2.6</authlete.java.jaxrs.version>
+        <authlete.java.common.version>2.88</authlete.java.common.version>
+        <authlete.java.jaxrs.version>2.31</authlete.java.jaxrs.version>
         <jersey-media-moxy.version>2.17</jersey-media-moxy.version>
     </properties>
 
