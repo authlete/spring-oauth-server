@@ -19,14 +19,14 @@ package com.authlete.spring.server.api;
 
 import com.authlete.common.dto.Property;
 import com.authlete.common.types.User;
-import com.authlete.jaxrs.spi.TokenRequestHandlerSpiAdapter;
+import com.authlete.jakarta.spi.TokenRequestHandlerSpiAdapter;
 import com.authlete.spring.server.db.UserDao;
 
 
 /**
- * Implementation of {@link com.authlete.jaxrs.spi.TokenRequestHandlerSpi
+ * Implementation of {@link com.authlete.jakarta.spi.TokenRequestHandlerSpi
  * TokenRequestHandlerSpi} interface which needs to be given to the
- * constructor of {@link com.authlete.jaxrs.TokenRequestHandler
+ * constructor of {@link com.authlete.jakarta.TokenRequestHandler
  * TokenRequestHandler}.
  *
  * @author Takahiko Kawasaki

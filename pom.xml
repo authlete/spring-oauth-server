@@ -10,16 +10,15 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>1.8</java.version>
-        <authlete.java.common.version>2.11</authlete.java.common.version>
-        <authlete.java.jaxrs.version>2.6</authlete.java.jaxrs.version>
-        <jersey-media-moxy.version>2.17</jersey-media-moxy.version>
+        <java.version>18</java.version>
+        <authlete.java.jakarta.version>2.68</authlete.java.jakarta.version>
+        <jersey-media-moxy.version>3.1.4</jersey-media-moxy.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.8.RELEASE</version>
+        <version>3.2.0</version>
     </parent>
 
     <dependencies>
@@ -47,14 +46,8 @@
 
         <dependency>
             <groupId>com.authlete</groupId>
-            <artifactId>authlete-java-common</artifactId>
-            <version>${authlete.java.common.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.authlete</groupId>
-            <artifactId>authlete-java-jaxrs</artifactId>
-            <version>${authlete.java.jaxrs.version}</version>
+            <artifactId>authlete-java-jakarta</artifactId>
+            <version>${authlete.java.jakarta.version}</version>
         </dependency>
 
         <dependency>

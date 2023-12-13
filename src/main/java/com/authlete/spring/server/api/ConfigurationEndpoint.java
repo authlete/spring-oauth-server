@@ -17,12 +17,12 @@
 package com.authlete.spring.server.api;
 
 
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import com.authlete.common.api.AuthleteApiFactory;
-import com.authlete.jaxrs.BaseConfigurationEndpoint;
+import com.authlete.jakarta.BaseConfigurationEndpoint;
 
 
 /**

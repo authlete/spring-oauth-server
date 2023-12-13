@@ -386,7 +386,7 @@ Contact
 [18]: ../src/main/java/com/authlete/spring/server/api/AuthorizationRequestHandlerSpiImpl.java
 [19]: http://authlete.github.io/authlete-java-jaxrs/com/authlete/jaxrs/spi/AuthorizationRequestHandlerSpiAdapter.html
 [20]: http://authlete.github.io/authlete-java-common/com/authlete/common/dto/AuthorizationResponse.html
-[21]: ../src/main/resources/templates/authorization.ftl
+[21]: ../src/main/resources/templates/authorization.ftlh
 [22]: http://authlete.github.io/authlete-java-common/com/authlete/common/types/Display.html
 [23]: ../src/main/java/com/authlete/spring/server/api/TokenEndpoint.java
 [24]: http://authlete.github.io/authlete-java-jaxrs/com/authlete/jaxrs/TokenRequestHandler.html

@@ -155,4 +155,24 @@ public class UserEntity implements User
                 return null;
         }
     }
+
+    @Override
+    public Object getAttribute(String attributeName)
+    {
+        if (attributeName == null)
+        {
+            return null;
+        }
+
+        switch (attributeName)
+        {
+            case "subject":
+                // The code of the user.
+                return subject;
+
+            default:
+                // Unsupported attribute.
+                return null;
+        }
+    }
 }

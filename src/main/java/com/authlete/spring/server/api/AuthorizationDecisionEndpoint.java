@@ -17,23 +17,23 @@
 package com.authlete.spring.server.api;
 
 
-import static com.authlete.jaxrs.util.JaxRsUtils.createMultivaluedMap;
+import static com.authlete.jakarta.util.JaxRsUtils.createMultivaluedMap;
 import java.util.Date;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.MultivaluedMap;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.WebApplicationException;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.MultivaluedMap;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.Status;
 import org.springframework.stereotype.Component;
 import com.authlete.common.api.AuthleteApiFactory;
 import com.authlete.common.types.User;
-import com.authlete.jaxrs.BaseAuthorizationDecisionEndpoint;
+import com.authlete.jakarta.BaseAuthorizationDecisionEndpoint;
 import com.authlete.spring.server.db.UserDao;
 
 
@@ -57,9 +57,6 @@ public class AuthorizationDecisionEndpoint extends BaseAuthorizationDecisionEndp
      *
      * @param request
      *         A request from the form in the authorization page.
-     *
-     * @param parameters
-     *         Request parameters.
      *
      * @return
      *         A response to the user agent. Basically, the response
@@ -157,7 +154,7 @@ public class AuthorizationDecisionEndpoint extends BaseAuthorizationDecisionEndp
      * Get the value of an attribute from the given session and
      * remove the attribute from the session after the retrieval.
      */
-    private Object takeAttribute(HttpSession session, String key)
+    protected Object takeAttribute(HttpSession session, String key)
     {
         // Retrieve the value from the session.
         Object value = session.getAttribute(key);

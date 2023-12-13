@@ -1,0 +1,5 @@
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true

@@ -18,16 +18,16 @@ package com.authlete.spring.server.api;
 
 
 import java.util.Date;
-import javax.ws.rs.core.MultivaluedMap;
+import jakarta.ws.rs.core.MultivaluedMap;
 import com.authlete.common.dto.Property;
 import com.authlete.common.types.User;
-import com.authlete.jaxrs.spi.AuthorizationDecisionHandlerSpiAdapter;
+import com.authlete.jakarta.spi.AuthorizationDecisionHandlerSpiAdapter;
 
 
 /**
- * Implementation of {@link com.authlete.jaxrs.spi.AuthorizationDecisionHandlerSpi
+ * Implementation of {@link com.authlete.jakarta.spi.AuthorizationDecisionHandlerSpi
  * AuthorizationDecisionHandlerSpi} interface which needs to be given
- * to the constructor of {@link com.authlete.jaxrs.AuthorizationDecisionHandler
+ * to the constructor of {@link com.authlete.jakarta.AuthorizationDecisionHandler
  * AuthorizationDecisionHandler}.
  *
  * <p>
