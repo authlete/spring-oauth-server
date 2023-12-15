@@ -23,25 +23,25 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.Status;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.ViewResolver;
 import com.authlete.common.dto.AuthorizationResponse;
 import com.authlete.common.types.Prompt;
 import com.authlete.common.types.User;
-import com.authlete.jaxrs.AuthorizationPageModel;
-import com.authlete.jaxrs.spi.AuthorizationRequestHandlerSpiAdapter;
+import com.authlete.jakarta.AuthorizationPageModel;
+import com.authlete.jakarta.spi.AuthorizationRequestHandlerSpiAdapter;
 
 
 /**
- * Implementation of {@link com.authlete.jaxrs.spi.AuthorizationRequestHandlerSpi
+ * Implementation of {@link com.authlete.jakarta.spi.AuthorizationRequestHandlerSpi
  * AuthorizationRequestHandlerSpi} interface which needs to be given
- * to the constructor of {@link com.authlete.jaxrs.AuthorizationRequestHandler
+ * to the constructor of {@link com.authlete.jakarta.AuthorizationRequestHandler
  * AuthorizationRequestHandler}.
  *
  * <p>

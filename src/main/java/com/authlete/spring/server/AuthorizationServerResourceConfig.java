@@ -17,7 +17,7 @@
 package com.authlete.spring.server;
 
 
-import javax.ws.rs.ApplicationPath;
+import jakarta.ws.rs.ApplicationPath;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
 import com.authlete.spring.server.api.AuthorizationDecisionEndpoint;

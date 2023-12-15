@@ -17,12 +17,12 @@
 package com.authlete.spring.server.api;
 
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.core.Response;
 import org.springframework.stereotype.Component;
 import com.authlete.common.api.AuthleteApiFactory;
-import com.authlete.jaxrs.BaseJwksEndpoint;
+import com.authlete.jakarta.BaseJwksEndpoint;
 
 
 /**
