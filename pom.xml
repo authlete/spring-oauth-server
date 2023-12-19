@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>18</java.version>
+        <java.version>21</java.version>
         <authlete.java.jakarta.version>2.68</authlete.java.jakarta.version>
         <jersey-media-moxy.version>3.1.4</jersey-media-moxy.version>
     </properties>
