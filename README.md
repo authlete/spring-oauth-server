@@ -236,7 +236,7 @@ Contact
 [6]: https://www.authlete.com/documents/apis
 [7]: https://www.authlete.com/
 [8]: https://www.authlete.com/documents/overview
-[9]: https://so.authlete.com/accounts/signup
+[9]: https://console.authlete.com/register
 [10]: https://www.authlete.com/documents/getting_started
 [11]: http://tools.ietf.org/html/rfc6749#section-3.1
 [12]: http://tools.ietf.org/html/rfc6749#section-3.2
